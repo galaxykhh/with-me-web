@@ -39,8 +39,8 @@ const Layout = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 80px;
+    width: 180px;
+    height: 60px;
     border-radius: 30px;
     margin-right: 25px;
     padding: 20px;

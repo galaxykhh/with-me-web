@@ -10,8 +10,8 @@ const WithMeLogo: React.FC = () => {
 export default WithMeLogo;
 
 const LogoText = styled.div`
-    color: ${({ theme }) => theme.colors.white};
-    font-size: 40px;
+    color: ${({ theme }) => theme.colors.primary};
+    font-size: 80px;
     font-family: 'Kalam';
     text-align: start;
 `;

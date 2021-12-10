@@ -1,10 +1,23 @@
 import React from 'react';
-import FirstBlock from './pages/FirstBlock/FirstBlock';
+import FifthSection from './sections/FifthSection';
+import FourthSection from './sections/FourthSection';
+import LastSection from './sections/LastSection';
+import SecondSection from './sections/SecondSection';
+import SixthSection from './sections/SixthSection';
+import ThirdSection from './sections/ThirdSection';
+import TopHero from './components/TopHero';
 
 const App: React.FC = () => {
     return (
         <>
-            <FirstBlock />
+            <TopHero />
+            <SecondSection />
+            <ThirdSection />
+            <FourthSection />
+            <FifthSection />
+            <SixthSection />
+            <LastSection />
+            {/* <div style={{paddingBottom: '80px'}} /> */}
         </>
     );
 }

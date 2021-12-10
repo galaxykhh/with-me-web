@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import WithMeLogo from "./WithMeLogo";
+import WithMeLogo from "../Universal/WithMeLogo";
 
 const Header: React.FC = () => {
     return (
@@ -17,8 +17,6 @@ const FlexBox = styled.div`
     min-width: 600px;
     width: 1200px;
     height: 60px;
-    position: absolute;
     text-align: start;
-    top: 30px;
     /* margin-bottom: 50px; */
 `;

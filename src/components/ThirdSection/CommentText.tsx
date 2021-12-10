@@ -3,29 +3,31 @@ import styled from "styled-components";
 import { Text } from "../../element/text";
 import { theme } from "../../style/theme";
 
-const TextComponent: React.FC = () => {
+const CommentText: React.FC = () => {
     return (
         <Container>
             <Text
-                size='65px'
+                size='60px'
                 color={theme.colors.white}
                 fontWeight={'bold'}
-                bottomPadding="0.5em"
+                bottomPadding="2rem"
             >
-                너와 나만의 공간.
+                다이어리 속 대화
             </Text>
             <Text
-                size='65px'
+                size='30px'
                 color={theme.colors.white}
-                fontWeight={'bold'}
+                fontWeight={'normal'}
+                bottomPadding="1rem"
+                style={{letterSpacing: '-1px'}}
             >
-                위드미
+                댓글로 나의 생각을 남겨보세요.
             </Text>
         </Container>
     );
 }
 
-export default TextComponent;
+export default CommentText;
 
 const Container = styled.div`
     width: 500px;

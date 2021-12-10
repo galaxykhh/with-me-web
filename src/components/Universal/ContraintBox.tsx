@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-interface IBlock {
+interface IConstraintBox {
     maxWidth?: string;
 }
 
-const ConstraintBlock: React.FC<IBlock> = (props) => {
+const ConstraintBox: React.FC<IConstraintBox> = (props) => {
     return (
         <Layout maxWidth={props.maxWidth} >
             {props.children}
@@ -13,10 +13,10 @@ const ConstraintBlock: React.FC<IBlock> = (props) => {
     );
 }
 
-export default ConstraintBlock;
+export default ConstraintBox;
 
 const Layout = styled.div<{maxWidth?: string}>`
-    max-width: ${props => props.maxWidth ?? '1200px'};
+    max-width: ${props => props.maxWidth ?? '1000px'};
     min-width: 600px;
     width: 1200px;
     margin: 0px auto;
