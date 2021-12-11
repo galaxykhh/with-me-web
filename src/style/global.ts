@@ -2,7 +2,11 @@ import { normalize } from 'styled-normalize';
 import { createGlobalStyle } from 'styled-components';
 import { ThemeType } from './theme';
 
-const GlobalStyle = createGlobalStyle`
+interface ITheme {
+    theme: ThemeType,
+}
+
+const GlobalStyle = createGlobalStyle<ITheme>`
 
     ${normalize};
 
@@ -25,7 +29,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h3 {
-        font-size: 30px;
+        font-size: 28px;
+        font-weight: normal;
+        letter-spacing: -1px;
+        padding-bottom: 10px;
+        color: ${({ theme }) => theme.colors.black};
     }
     * {
         margin: 0;
