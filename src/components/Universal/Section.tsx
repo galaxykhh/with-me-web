@@ -1,19 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import { ColumnBox } from "../../element/columnBox";
-import { RowBox } from "../../element/rowBox";
+import { ColumnBox } from "../../elements/columnBox";
+import { RowBox } from "../../elements/rowBox";
 import MobileImage from "./MobileImage";
 
 type MobileImagePosition = 'left' | 'right';
 
-interface ISection {
+export interface ISection {
     backgroundColor: string,
     imageCount: string,
     mobileImagePosition: MobileImagePosition,
     titleText: string,
+    firstLineText: string,
+    secondLineText: string,
 }
 
-const Section: React.FC<ISection> = (props) => {
+const Section = (props: ISection) => {
     return (
         <Container style={{backgroundColor: props.backgroundColor}}>
             <RowBox
@@ -31,7 +33,8 @@ const Section: React.FC<ISection> = (props) => {
                     >
                         {props.titleText}
                     </h2>
-                    {props.children}
+                    <h3>{props.firstLineText}</h3>
+                    <h3>{props.secondLineText}</h3>
                 </ColumnBox>
 
                 <MobileImage

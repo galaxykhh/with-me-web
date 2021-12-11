@@ -1,7 +1,7 @@
 import React from "react";
 import MobileImage from "../components/Universal/MobileImage";
-import { ColumnBox } from "../element/columnBox";
-import { RowBox } from "../element/rowBox";
+import { ColumnBox } from "../elements/columnBox";
+import { RowBox } from "../elements/rowBox";
 import styled from "styled-components";
 
 
